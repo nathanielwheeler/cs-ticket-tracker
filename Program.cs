@@ -1,4 +1,5 @@
 ﻿using System;
+using TicketTracker.Models;
 
 namespace TicketTracker
 {
@@ -6,7 +7,8 @@ namespace TicketTracker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            App app = new App();
+            app.Run();
         }
     }
 }

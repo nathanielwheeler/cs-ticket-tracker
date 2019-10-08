@@ -1,6 +1,8 @@
+using TicketTracker.Interfaces;
+
 namespace TicketTracker.Models
 {
-    public class Ticket
+    public class Ticket : ITicket
     {
         public string Title { get; private set; }
         public string Description { get; set; }

@@ -25,7 +25,18 @@ ___________.__        __           __ ___________                     __
             {
                 System.Console.WriteLine("What would you like to do? (view / new / quit)");
                 string choice = Console.ReadLine();
-                makeSelection(choice);
+                GetUserInput(choice);
+            }
+        }
+        public void GetUserInput(string choice)
+        {
+            switch (choice.ToLower())
+            {
+                case "view":
+                case "new":
+                case "quit":
+                    active = false;
+                    break;
             }
         }
     }
